@@ -1,0 +1,28 @@
+<h1>Users#show</h1>
+
+<table>
+  <thead>
+    <tr>                  
+      <th>Nombre</th>      
+      <th>Apellidos</th>      
+      <th>Direccion</th>      
+      <th>Teléfono</th>      
+      <th>Usuario</th>
+      <th>Email</th>
+      <th>Tipo Usuario</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <%= @users.each do |user| %>
+      <tr>
+      	<td><%= user.nombre %></td>        
+      	<td><%= user.apellidos %></td>        
+      	<td><%= user.direccion %></td>        
+      	<td><%= user.telefono %></td>        
+        <td><%= user.username %></td>        
+        <td><%= user.email %></td>
+        <td><%= user.tipoUsuario %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
