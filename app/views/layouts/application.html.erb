@@ -10,10 +10,10 @@
  <div id="container">
     <div class="user_nav">
       <% if current_user %>
-        <strong>Ha iniciado sesión: <%= current_user.nombre %> <%=current_user.apellidos %>.</strong>
+        <strong>Sesión: <%= current_user.nombre %> <%=current_user.apellidos %>.</strong>
         <%= link_to "Cerrar sesión", logout_path %>
       <% else %>
-        <%= link_to "Registrar nuevo usuario", signup_path %> or
+        <%= link_to "Nuevo usuario", signup_path %> or
         <%= link_to "Iniciar sesión", login_path %>.
       <% end %>
     </div>
